@@ -17,7 +17,7 @@ namespace C_
 
             float media = (notaUm + notaDois + notaTres) / 3;
 
-            Console.WriteLine("notas digitadas: 1° Nota foi " + notaUm + ", 2° nota foi " + notaDois + " e a 3° nota foi " + notaTres);
+            Console.WriteLine("notas digitadas: sua 1° Nota foi " + notaUm + ", sua 2° nota foi " + notaDois + " e a sua 3° nota foi " + notaTres);
             Console.WriteLine("Sua média final é " + Math.Round(media, 1).ToString());
 
             if (media < 6){
