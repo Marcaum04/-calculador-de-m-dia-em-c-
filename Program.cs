@@ -6,19 +6,19 @@ namespace C_
     {
         static void Main(string[] args)
         {
-            Console.Write("Digite o primeiro número: ");
+            Console.Write("Digite o primeiro nota: ");
             float notaUm = float.Parse(Console.ReadLine());
 
-            Console.Write("Digite o primeiro número: ");
+            Console.Write("Digite o segunda nota: ");
             float notaDois = float.Parse(Console.ReadLine());
 
-            Console.Write("Digite o primeiro número: ");
+            Console.Write("Digite o terceira nota: ");
             float notaTres = float.Parse(Console.ReadLine());
 
             float media = (notaUm + notaDois + notaTres) / 3;
 
             Console.WriteLine("notas digitadas: 1° Nota foi " + notaUm + ", 2° nota foi " + notaDois + " e a 3° nota foi " + notaTres);
-            Console.WriteLine("Sua média final é " + media);
+            Console.WriteLine("Sua média final é " + Math.Round(media, 1).ToString());
 
             if (media < 6){
                 Console.WriteLine("Você foi reprovado!");
