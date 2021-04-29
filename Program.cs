@@ -6,19 +6,22 @@ namespace C_
     {
         static void Main(string[] args)
         {
+           
+            Console.WriteLine("Exercício de Média\n");
+           
             Console.Write("Digite o primeiro nota: ");
-            float notaUm = float.Parse(Console.ReadLine());
+            double notaUm = double.Parse(Console.ReadLine());
 
             Console.Write("Digite o segunda nota: ");
-            float notaDois = float.Parse(Console.ReadLine());
+            double notaDois = double.Parse(Console.ReadLine());
 
             Console.Write("Digite o terceira nota: ");
-            float notaTres = float.Parse(Console.ReadLine());
+            double notaTres = double.Parse(Console.ReadLine());
 
-            float media = (notaUm + notaDois + notaTres) / 3;
+            double media = (notaUm + notaDois + notaTres) / 3;
 
-            Console.WriteLine("notas digitadas: sua 1° Nota foi " + notaUm + ", sua 2° nota foi " + notaDois + " e a sua 3° nota foi " + notaTres);
-            Console.WriteLine("Sua média final é " + Math.Round(media, 1).ToString());
+            Console.WriteLine("\nnotas digitadas:\n1° Nota " + notaUm + "\n2° nota " + notaDois + "\n3° nota " + notaTres);
+            Console.WriteLine("\nSua média final é " + Math.Round(media, 1).ToString());
 
             if (media <= 5){
                 Console.WriteLine("Você foi reprovado!");
