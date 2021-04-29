@@ -23,11 +23,17 @@ namespace C_
             Console.WriteLine("\nnotas digitadas:\n1° Nota " + notaUm + "\n2° nota " + notaDois + "\n3° nota " + notaTres);
             Console.WriteLine("\nSua média final é " + Math.Round(media, 1).ToString());
 
-            if (media <= 5){
+            if (media <= 5){ 
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Você foi reprovado!");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("\nFim do Programa");
             }
             else{
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Você foi aprovado!");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("\nFim do Programa");
             }
 
         }
