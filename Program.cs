@@ -20,7 +20,7 @@ namespace C_
             Console.WriteLine("notas digitadas: sua 1° Nota foi " + notaUm + ", sua 2° nota foi " + notaDois + " e a sua 3° nota foi " + notaTres);
             Console.WriteLine("Sua média final é " + Math.Round(media, 1).ToString());
 
-            if (media < 6){
+            if (media <= 5){
                 Console.WriteLine("Você foi reprovado!");
             }
             else{
